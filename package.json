@@ -1,0 +1,41 @@
+{
+  "name": "avatar-builder",
+  "version": "0.9.0",
+  "description": "Create a beautiful avatar for nodejs",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "sample": "tsc & node sample.js"
+  },
+  "keywords": [
+    "avatar",
+    "builder",
+    "avatar-builder",
+    "nodejs",
+    "node",
+    "cat",
+    "identicon",
+    "square",
+    "triangle",
+    "github",
+    "8bit"
+  ],
+  "author": "Gabriel Allaigre",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/lru-cache": "^4.1.1",
+    "@types/node": "^10.10.1",
+    "@types/seedrandom": "^2.4.27",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.1"
+  },
+  "dependencies": {
+    "canvas": "^2.2.0",
+    "lru-cache": "^4.1.5",
+    "seedrandom": "^2.4.4"
+  },
+  "engines": {
+    "node": ">=10.0",
+    "npm": ">=6.0"
+  }
+}

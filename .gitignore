@@ -1,0 +1,55 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+
+tomcat.*/
+
+logs/
+
+# dependencies
+/node_modules
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+/lib
+
