@@ -2,7 +2,7 @@
 
 Avatar builder, build multi avatar (cat, github, 8bit, square, identicon, etc) or compose avatar
 
-![image](doc/multi.png)
+![image](https://github.com/gabrie-allaigre/node-avatar-builder/raw/master/doc/multi.png)
 
 ## Install
 
@@ -20,8 +20,8 @@ avatar.create('gabriel').then(buffer => fs.writeFileSync('avatar-gabriel.png', b
 avatar.create('allaigre').then(buffer => fs.writeFileSync('avatar-allaigre.png', buffer));
 ```
 
-![image](doc/avatar-gabriel.png)
-![image](doc/avatar-allaigre.png)
+![image](https://github.com/gabrie-allaigre/node-avatar-builder/raw/master/doc/avatar-gabriel.png)
+![image](https://github.com/gabrie-allaigre/node-avatar-builder/raw/master/doc/avatar-allaigre.png)
 
 > Content typescript definition
 
@@ -41,7 +41,7 @@ const avatar = Avatar.triangleBuilder(128);
 avatar.create('gabriel').then(buffer => {/* png buffer */});
 ```
 
-![image](doc/triangle1.png)
+![image](https://github.com/gabrie-allaigre/node-avatar-builder/raw/master/doc/triangle1.png)
 
 ### Square
 
@@ -57,7 +57,7 @@ const avatar = Avatar.squareBuilder(128);
 avatar.create('gabriel').then(buffer => {/* png buffer */});
 ```
 
-![image](doc/square1.png)
+![image](https://github.com/gabrie-allaigre/node-avatar-builder/raw/master/doc/square1.png)
 
 ### Identicon
 
@@ -73,7 +73,7 @@ const avatar = Avatar.identiconBuilder(128);
 avatar.create('gabriel').then(buffer => {/* png buffer */});
 ```
 
-![image](doc/identicon1.png)
+![image](https://github.com/gabrie-allaigre/node-avatar-builder/raw/master/doc/identicon1.png)
 
 ### GitHub
 
@@ -87,7 +87,7 @@ const avatar = Avatar.githubBuilder(128);
 avatar.create('gabriel').then(buffer => {/* png buffer */});
 ```
 
-![image](doc/github1.png)
+![image](https://github.com/gabrie-allaigre/node-avatar-builder/raw/master/doc/github1.png)
 
 ### Cat
 
@@ -103,7 +103,7 @@ const avatar = Avatar.catBuilder(128);
 avatar.create('gabriel').then(buffer => {/* png buffer */});
 ```
 
-![image](doc/cat1.png)
+![image](https://github.com/gabrie-allaigre/node-avatar-builder/raw/master/doc/cat1.png)
 
 **Example 2 :**
 
@@ -120,7 +120,7 @@ const avatar = Avatar.builder(
 avatar.create('gabriel').then(buffer => {/* png buffer */});
 ```
 
-![image](doc/cat2.png)
+![image](https://github.com/gabrie-allaigre/node-avatar-builder/raw/master/doc/cat2.png)
 
 ### 8 bit
 
@@ -136,7 +136,7 @@ const avatar = Avatar.male8bitBuilder(128);
 avatar.create('gabriel').then(buffer => {/* png buffer */});
 ```
 
-![image](doc/8bitmale.png)
+![image](https://github.com/gabrie-allaigre/node-avatar-builder/raw/master/doc/8bitmale.png)
 
 **Example 2 :**
 
@@ -148,7 +148,7 @@ const avatar = Avatar.female8bitBuilder(128);
 avatar.create('gabriel').then(buffer => {/* png buffer */});
 ```
 
-![image](doc/8bitfemale.png)
+![image](https://github.com/gabrie-allaigre/node-avatar-builder/raw/master/doc/8bitfemale.png)
 
 
 ## Cache
