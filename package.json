@@ -1,6 +1,6 @@
 {
   "name": "avatar-builder",
-  "version": "0.9.1",
+  "version": "1.0.0",
   "description": "Create a beautiful avatar for nodejs",
   "main": "lib/index.js",
   "scripts": {
