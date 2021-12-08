@@ -305,4 +305,3 @@ namespace Avatar {
 }
 
 export default Avatar;
-module.exports = Avatar;
