@@ -1,9 +1,9 @@
-const Avatar = require('./lib');
+const Avatar = require('./lib/index').default;
 const {createCanvas} = require('canvas');
 const fs = require('fs');
 
 if (!fs.existsSync('./tmp')) {
-  fs.mkdirSync(location, {recursive: true});
+  fs.mkdirSync('./tmp', {recursive: true});
 }
 
 // General

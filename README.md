@@ -13,7 +13,15 @@ npm install avatar-builder --save
 ## Usage
 
 ```javascript
-const Avatar = require('avatar-builder');
+const Avatar = require('avatar-builder').default;
+
+const avatar = Avatar.builder(Avatar.Image.margin(Avatar.Image.circleMask(Avatar.Image.identicon())),128,128, {cache: Avatar.Cache.lru()});
+avatar.create('gabriel').then(buffer => fs.writeFileSync('avatar-gabriel.png', buffer));
+avatar.create('allaigre').then(buffer => fs.writeFileSync('avatar-allaigre.png', buffer));
+```
+
+```typescript
+import Avatar from 'avatar-builder';
 
 const avatar = Avatar.builder(Avatar.Image.margin(Avatar.Image.circleMask(Avatar.Image.identicon())),128,128, {cache: Avatar.Cache.lru()});
 avatar.create('gabriel').then(buffer => fs.writeFileSync('avatar-gabriel.png', buffer));
@@ -34,7 +42,7 @@ More example in [sample.js](./sample.js)
 **Example 1 :**
 
 ```javascript
-const Avatar = require('avatar-builder');
+const Avatar = require('avatar-builder').default;
 
 const avatar = Avatar.triangleBuilder(128);
 
@@ -50,7 +58,7 @@ Source : https://github.com/flouthoc/minBlock.js
 **Example 1 :**
 
 ```javascript
-const Avatar = require('avatar-builder');
+const Avatar = require('avatar-builder').default;
 
 const avatar = Avatar.squareBuilder(128);
 
@@ -66,7 +74,7 @@ Source : https://github.com/donpark/identicon
 **Example 1 :**
 
 ```javascript
-const Avatar = require('avatar-builder');
+const Avatar = require('avatar-builder').default;
 
 const avatar = Avatar.identiconBuilder(128);
 
@@ -80,7 +88,7 @@ avatar.create('gabriel').then(buffer => {/* png buffer */});
 **Example 1 :**
 
 ```javascript
-const Avatar = require('avatar-builder');
+const Avatar = require('avatar-builder').default;
 
 const avatar = Avatar.githubBuilder(128);
 
@@ -96,7 +104,7 @@ Images sources :  CC-By 4.0 attribution: David Revoy https://framagit.org/Deevad
 **Example 1 :**
 
 ```javascript
-const Avatar = require('avatar-builder');
+const Avatar = require('avatar-builder').default;
 
 const avatar = Avatar.catBuilder(128);
 
@@ -108,7 +116,7 @@ avatar.create('gabriel').then(buffer => {/* png buffer */});
 **Example 2 :**
 
 ```javascript
-const Avatar = require('avatar-builder');
+const Avatar = require('avatar-builder').default;
 
 const avatar = Avatar.builder(
                  Avatar.Image.margin(Avatar.Image.roundedRectMask(Avatar.Image.compose(
@@ -129,7 +137,7 @@ Images sources : https://github.com/o1egl/govatar
 **Example 1 :**
 
 ```javascript
-const Avatar = require('avatar-builder');
+const Avatar = require('avatar-builder').default;
 
 const avatar = Avatar.male8bitBuilder(128);
 
@@ -141,7 +149,7 @@ avatar.create('gabriel').then(buffer => {/* png buffer */});
 **Example 2 :**
 
 ```javascript
-const Avatar = require('avatar-builder');
+const Avatar = require('avatar-builder').default;
 
 const avatar = Avatar.female8bitBuilder(128);
 
@@ -158,7 +166,7 @@ Compose cache
 **Example, cache with lru and folder**
 
 ```javascript
-const Avatar = require('avatar-builder');
+const Avatar = require('avatar-builder').default;
 
 const avatar = Avatar.catBuilder(128, { cache: Avatar.Cache.compose(Avatar.Cache.lru(), Avatar.Cache.folder()) });
 
